@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Suspicious Input Logs</h2>
+  <pre style="background:#f5f5f5; padding: 1em;">{{ log_data }}</pre>
+  <a href="{{ url_for('main.download_log', log_type='prediction') }}" class="btn btn-outline-primary">Download Prediction Log</a>
+  <a href="{{ url_for('main.download_log', log_type='mfa') }}" class="btn btn-outline-secondary">Download MFA Log</a>
+  
+  <a href="{{ url_for('main.verify_log', log_type='prediction') }}" class="btn btn-success">Verify Prediction Log</a>
+  <a href="{{ url_for('main.verify_log', log_type='mfa') }}" class="btn btn-info">Verify MFA Log</a>
+  
+
+  <a href="{{ url_for('main.index') }}">Back to Home</a>
+{% endblock %}

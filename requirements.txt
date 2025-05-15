@@ -1,0 +1,8 @@
+flask==2.3.2
+flask-sqlalchemy==3.0.3
+flask-login==0.6.2
+flask-bcrypt==1.0.1
+scikit-learn==1.2.2
+numpy==1.24.3
+python-dotenv==1.0.0
+werkzeug==2.3.7  # Specific version that works with flask-login 0.6.2

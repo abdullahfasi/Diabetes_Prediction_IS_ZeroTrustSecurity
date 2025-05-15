@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>MFA Verification</h2>
+  <form method="post">
+    <label for="code">Enter the 6-digit code sent to your email/device:</label><br>
+    <input type="text" name="code" maxlength="6" required><br><br>
+    <button type="submit">Verify</button>
+  </form>
+{% endblock %}
